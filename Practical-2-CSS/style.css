@@ -1,0 +1,18 @@
+body{
+    background-color: darkolivegreen;
+}
+
+a{
+    color: azure;
+    text-decoration: none;
+}
+img{
+    margin-left: 100px;
+    scale: 100%;
+}
+
+figure{
+    margin-left: 130px;
+    color: azure;
+    font-weight: bold;
+}
