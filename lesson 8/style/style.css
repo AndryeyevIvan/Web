@@ -11,10 +11,6 @@
     margin: 0 auto;
 }
 
-main{
-    margin: 0 100px;
-}
-
 .header-top{
     display: flex;
     justify-content: space-between;
@@ -57,7 +53,7 @@ nav ul li a:hover{
     color: #ba49f0;
 }
 
-.header-top-btn{
+.header-top-btn button{
     border: none;
     padding: 10px;
     background: transparent;
@@ -152,6 +148,7 @@ nav ul li a:hover{
 .catalog{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .catalog-top{
@@ -172,13 +169,17 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    /*column-gap: 30px;*/
+    justify-content: space-between;
+    column-gap: 10px;
 }
 
 .card{
     border: 1px solid #e0e0e0;
     border-radius: 15px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 4px #101727;
 }
 
 .label{
@@ -232,11 +233,101 @@ nav ul li a:hover{
 .all-tov{
     display: flex;
     justify-content: center;
+}
+
+.all-tov-btn{
+    display: flex;
+    justify-content: center;
     padding: 10px 0;
     background: #a527ed;
     color: white;
     border: none;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
     width: 500px;
+}
+
+.send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #a527ed;
+    color: white;
+    padding: 50px 0;
+    row-gap: 15px;
+}
+
+.send h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.send p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.send button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: white;
+    color: #a527ed;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #101727;
+    color: white;
+    padding: 20px 0;
+}
+
+.column{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.column ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.column h3{
+    font-weight: 450;
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+
+.footer-social ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.logo-tittle2{
+    color: white;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #101727;
+    padding: 50px 0;
 }
