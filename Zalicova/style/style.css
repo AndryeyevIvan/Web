@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    column-gap: 20px;
+}
+
+header nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.main-bg{
+    background-color: #050827;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 2px;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/coffee.jpg");
+    place-items: center center;
+    color: white;
+    padding: 100px;
+}
+
+.featured-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.featured-item{
+    place-items: center center;
+}
+
+.menu-item{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 2px;
+    justify-content: center;
+    align-content: center;
+    place-items: center center;
+    padding: 100px;
+}
+
+.products-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.product img{
+    width: 50%;
+}
