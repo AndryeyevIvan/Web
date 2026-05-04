@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Форма прийому на роботу</title>
+</head>
+<body>
+<main class="wrapper">
+    <header class="wrapper">
+        <div class="header">
+            <h1>Форма прийому на роботу</h1>
+            <p class="head-p-1">ІТ Компанія "TechInnovate"</p>
+            <p class="head-p-2">Поля позначені синьою лінією є обов'язковими для заповнення</p>
+        </div>
+    </header>
+    <form>
+        <section class="personal-data">
+            <h2>Персональні дані</h2>
+            <div class="personal-data-grid">
+                <div class="name">
+                    <label for="input-name">Ім'я *</label>
+                    <input type="text" name="name" id="input-name" placeholder="Введіть ваше ім'я">
+                </div>
+                <div class="email">
+                    <label for="input-email">Email *</label>
+                    <input type="email" name="email" id="input-email" placeholder="example@gmail.com">
+                </div>
+                <div class="surname">
+                    <label for="input-surname">Прізвище *</label>
+                    <input type="email" name="surname" id="input-surname" placeholder="Введіть ваше прізвище">
+                </div>
+                <div class="tel">
+                    <label for="input-tel">Телефон *</label>
+                    <input type="tel" name="tel" id="input-tel" placeholder="+380 XX XXX XX XX">
+                </div>
+            </div>
+        </section>
+        <section class="personal-inform">
+            <h2>Професійна інформація</h2>
+            <div class="personal-inform-grid">
+                <div class="first-part">
+                    <div class="pos">
+                        <label for="position">Бажана позиція *</label>
+                        <select name="position">
+                            <option value="position" selected>Оберіть позицію</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full">Full Stack Developer</option>
+                        </select>
+                    </div>
+                    <div class="dosvid">
+                        <label for="input-dosvid">Досвід роботи (років) *</label>
+                        <input type="number" min="0" max="50" name="dosvid" id="input-dosvid" placeholder="0-50">
+                    </div>
+                </div>
+                <div class="second-part">
+                    <label for="input-tec">Технології та навички *</label>
+                    <input type="text" name="tec" id="input-tec" placeholder="React, TypeScript, Node.js, Python...">
+                </div>
+            </div>
+        </section>
+        <section class="plus-inform">
+            <h2>Додаткова інформація</h2>
+            <div class="plus-inform-grid">
+                <div class="first-part-plus">
+                    <div class="github">
+                        <label for="input-github">GitHub профіль</label>
+                        <input type="url" name="github" id="input-github" placeholder="https://github.com/example">
+                    </div>
+                    <div class="portfolio">
+                        <label for="input-portfolio">Портфоліо</label>
+                        <input type="url" name="portfolio" id="input-portfolio" placeholder="https://yourportfolio.com">
+                    </div>
+                </div>
+                <div class="second-part-plus">
+                    <label for="input-resume">Резюме (PDF, DOC) *</label>
+                    <input type="file" name="tec" id="input-resume" placeholder="RВибрати файл">
+                </div>
+                <div class="third-part-plus">
+                    <label for="input-little">Коротко про себе *</label>
+                    <textarea rows="4" cols="20" name="little" id="input-little" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="agreement">
+            <label>
+                <input type="checkbox" name="agree">Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною *
+            </label>
+        </section>
+        <button type="submit" class="submit-btn">Надіслати заявку</button>
+    </form>
+    <footer>
+        <h2>💡 Підказки по заповненню:</h2>
+        <ul>
+            <li>✓ Зелена рамка — поле заповнено правильно</li>
+            <li>✗ Червона рамка — поле заповнено неправильно</li>
+            <li>→ Синя лінія зліва — обов'язкове поле</li>
+            <li>↗ Наведіть курсор на поле для ефекту підсвічування</li>
+        </ul>
+    </footer>
+</main>
+</body>
+</html>
