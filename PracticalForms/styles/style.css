@@ -16,6 +16,18 @@ body{
     padding: 0 50px;
 }
 
+.wrapa{
+    min-width: 700px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -23,6 +35,7 @@ body{
     justify-content: center;
     row-gap: 10px;
     margin: 30px 0;
+    padding-top: 50px
 }
 
 h1{
@@ -39,12 +52,124 @@ h1{
     font-size: 15px;
 }
 
-.main{
-    color: #fff;
+main{
+    background: #ffffff;
+    border-radius: 15px;
 }
 
 .personal-data{
     background: #eff3ff;
     border-radius: 20px;
     padding: 30px;
+}
+
+.personal-data h2{
+    color: #273985;
+    margin-bottom: 20px;
+}
+
+.personal-data-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+input{
+    padding: 15px 130px 15px 10px;
+    border: 3px solid #d4d6db;
+    border-radius: 10px;
+    border-left-color: #517fcc;
+}
+
+.personal-inform{
+    background: #f7f4ff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.personal-inform h2{
+    color: #2a3574;
+    margin-bottom: 20px;
+}
+
+select{
+    padding: 15px 130px 15px 10px;
+    border: 3px solid #d4d6db;
+    border-radius: 10px;
+    border-left-color: #517fcc;
+}
+
+.personal-inform-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+
+}
+
+.first-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+.plus-inform{
+    background: #f7f4ff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.first-part-plus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+.plus-inform h2{
+    color: #2a3574;
+    margin-bottom: 20px;
+}
+
+.plus-inform-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+
+textarea{
+    padding: 15px 130px 15px 10px;
+    border: 3px solid #d4d6db;
+    border-radius: 10px;
+    border-left-color: #517fcc;
+}
+
+.agreement{
+    background: #eff3ff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #434c6e;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-btn{
+    background: #4a42f8;
+    color: white;
+    padding: 10px 300px;
+    border-radius: 10px;
+    border: none;
 }

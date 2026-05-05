@@ -8,7 +8,7 @@
 </head>
 <body>
 <main class="wrapper">
-    <header class="wrapper">
+    <header>
         <div class="header">
             <h1>Форма прийому на роботу</h1>
             <p class="head-p-1">ІТ Компанія "TechInnovate"</p>
@@ -16,32 +16,32 @@
         </div>
     </header>
     <form>
-        <section class="personal-data">
+        <section class="personal-data wrapa">
             <h2>Персональні дані</h2>
             <div class="personal-data-grid">
-                <div class="name">
+                <div class="name inp">
                     <label for="input-name">Ім'я *</label>
                     <input type="text" name="name" id="input-name" placeholder="Введіть ваше ім'я">
                 </div>
-                <div class="email">
+                <div class="email inp">
                     <label for="input-email">Email *</label>
                     <input type="email" name="email" id="input-email" placeholder="example@gmail.com">
                 </div>
-                <div class="surname">
+                <div class="surname inp">
                     <label for="input-surname">Прізвище *</label>
                     <input type="email" name="surname" id="input-surname" placeholder="Введіть ваше прізвище">
                 </div>
-                <div class="tel">
+                <div class="tel inp">
                     <label for="input-tel">Телефон *</label>
                     <input type="tel" name="tel" id="input-tel" placeholder="+380 XX XXX XX XX">
                 </div>
             </div>
         </section>
-        <section class="personal-inform">
+        <section class="personal-inform wrapa">
             <h2>Професійна інформація</h2>
             <div class="personal-inform-grid">
                 <div class="first-part">
-                    <div class="pos">
+                    <div class="pos inp">
                         <label for="position">Бажана позиція *</label>
                         <select name="position">
                             <option value="position" selected>Оберіть позицію</option>
@@ -50,35 +50,35 @@
                             <option value="full">Full Stack Developer</option>
                         </select>
                     </div>
-                    <div class="dosvid">
+                    <div class="dosvid inp">
                         <label for="input-dosvid">Досвід роботи (років) *</label>
                         <input type="number" min="0" max="50" name="dosvid" id="input-dosvid" placeholder="0-50">
                     </div>
                 </div>
-                <div class="second-part">
+                <div class="second-part inp">
                     <label for="input-tec">Технології та навички *</label>
                     <input type="text" name="tec" id="input-tec" placeholder="React, TypeScript, Node.js, Python...">
                 </div>
             </div>
         </section>
-        <section class="plus-inform">
+        <section class="plus-inform wrapa">
             <h2>Додаткова інформація</h2>
             <div class="plus-inform-grid">
                 <div class="first-part-plus">
-                    <div class="github">
+                    <div class="github  inp">
                         <label for="input-github">GitHub профіль</label>
                         <input type="url" name="github" id="input-github" placeholder="https://github.com/example">
                     </div>
-                    <div class="portfolio">
+                    <div class="portfolio  inp">
                         <label for="input-portfolio">Портфоліо</label>
                         <input type="url" name="portfolio" id="input-portfolio" placeholder="https://yourportfolio.com">
                     </div>
                 </div>
-                <div class="second-part-plus">
+                <div class="second-part-plus  inp">
                     <label for="input-resume">Резюме (PDF, DOC) *</label>
                     <input type="file" name="tec" id="input-resume" placeholder="RВибрати файл">
                 </div>
-                <div class="third-part-plus">
+                <div class="third-part-plus  inp">
                     <label for="input-little">Коротко про себе *</label>
                     <textarea rows="4" cols="20" name="little" id="input-little" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися"></textarea>
                 </div>
